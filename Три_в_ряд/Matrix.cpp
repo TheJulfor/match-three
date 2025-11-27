@@ -73,3 +73,29 @@ void Show_Board(std::vector<std::vector<char>> board) {
     std::cout << "--";
   }
 }
+
+void MurMiau() {
+  int flag = 1;
+  int tmp = 1;
+  while (flag==1) {
+    if (tmp == 1) {
+      SetConsoleOutputCP(65001);
+      std::cout << ">^˶ω˶^<" << std::endl;
+      tmp++;
+      std::cout << "Ещё один? (1 - да, 0 - нет)" << std::endl;
+      std::cin >> flag;
+    }
+    else if (tmp == 2) {
+      std::cout << "\xE2\x82\x8D\xCB\x84;\xCB\x95;\xCB\x84\xE2\x82\x8E" << std::endl;
+      tmp++;
+      std::cout << "Ещё один? (1 - да, 0 - нет)" << std::endl;
+      std::cin >> flag;
+    }
+    else if (tmp == 3) {
+      std::cout << "\xE2\x82\x8D\xCB\x84\xCB\xB6\xE1\xB5\x94 \xE1\xB5\x95 \xE1\xB5\x94\xCB\xB6\xCB\x84\xE2\x82\x8Emeow" << std::endl;
+      tmp = 1;
+      std::cout << "Ещё один? (1 - да, 0 - нет)" << std::endl;
+      std::cin >> flag;
+    }
+  }
+}
