@@ -110,8 +110,6 @@ void generation_of_new_cells(std::vector<std::vector<char>>& board, bool& gen) {
 void Start_Game(std::vector<std::vector<char>>& board, int& total_score) {
   bool running = true;
   while (running) {
-    std::this_thread::sleep_for(std::chrono::milliseconds(1500));
-    system("cls");
     Show_Board(board, total_score);
 
     int r1, c1, r2, c2;
